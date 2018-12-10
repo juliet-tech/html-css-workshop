@@ -1,0 +1,70 @@
+#home {
+  background-color: #D23333;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  p {
+    margin-top: 1.5em;
+  }
+  a {
+    color: rgba(0,0,0,0.4);
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+.readme {
+  font-size: 18px;
+  &-section {
+    background-color: #FAFAFA;
+    padding: 20px;
+    box-shadow: 1px 1px 3px #F0F0F0;
+    position: relative;
+    margin: 50px 0;
+  }
+
+  .download {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  pre {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+
+  // Headings
+
+  h1.readme-header, h2.readme-header, h3.readme-header {
+    color: #36213e;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    // background: #474747;
+    line-height: 45px;
+    // text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  h1.readme-header {
+    font-size: 30px;
+  }
+  h2.readme-header {
+    font-size: 25px;
+  }
+  h3.readme-header {
+    font-size: 25px;
+  }
+  li {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 5px 0;
+  }
+}
+
+
