@@ -1,19 +1,5 @@
-#home {
-  background-color: #D23333;
-  color: white;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  p {
-    margin-top: 1.5em;
-  }
-  a {
-    color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 16px;
-  }
+h3 {
+  font-size: 25px
 }
 
 .readme {
@@ -52,10 +38,10 @@
     margin-bottom: 20px;
   }
   h1.readme-header {
-    font-size: 30px;
+    font-size: 33px;
   }
   h2.readme-header {
-    font-size: 25px;
+    font-size: 29px;
   }
   h3.readme-header {
     font-size: 25px;
