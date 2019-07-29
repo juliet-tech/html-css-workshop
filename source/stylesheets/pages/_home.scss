@@ -1,12 +1,28 @@
+
+.main-h1{
+  background-color: #1d0949;
+  padding: 20px;
+  max-width: 50%;
+  color: #cfe70a;
+  margin: 0 auto;
+  // border-radius: 7px
+}
+
 h3 {
-  font-size: 25px
+  font-size: 25px;
+  color: #1d0949
+}
+
+code{
+  color: #1d0949;
+  background-color: #6c71444f;
 }
 
 .readme {
   font-size: 18px;
   &-section {
     background-color: #FAFAFA;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 1px 1px 3px #F0F0F0;
     position: relative;
     margin: 50px 0;
@@ -26,7 +42,7 @@ h3 {
   // Headings
 
   h1.readme-header, h2.readme-header, h3.readme-header {
-    color: #36213e;
+    color: #1d0949;
     font-weight: bold;
     line-height: 25px;
     margin: 10px 0;
@@ -53,8 +69,21 @@ h3 {
   }
 }
 
+.readme-section{
+  border-radius: 7px;
+}
+
 .titling{
   font-family: "Roboto Mono"
+}
+
+a{
+  color: #0097a7
+}
+
+a:hover{
+  text-decoration-style: wavy;
+  // font-weight: bolder;
 }
 
 

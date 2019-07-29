@@ -1,4 +1,7 @@
-<%= partial "components/banner" %>
+<%#= partial "components/banner" %>
+<div class="main-h1">
+  <h1 class='text-center'>Guía de trabajo 🦹🏻‍♀️</h1>
+</div>
 <div class="container-fluid readme">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
@@ -6,19 +9,19 @@
       <section class="readme-section">
         <h2 class="readme-header">1. Set Up 🖥</h2>
         <ol>
-          <li>Abre Sublime Text. Se te debe abrir una pantalla negra sin nada escrito.</li>
-          <li>Crea un <strong>folder</strong> <code>perfil</code> en tu Escritorio. Arrastra este folder en tu ventana de Sublime Text.</li>
+          <li>Abre <strong>Sublime Text Editor</strong>. Se te debe abrir una pantalla negra sin nada escrito.</li>
+          <li>Crea un <strong>folder</strong> con el nombre_de_tu_website en tu Escritorio. Arrastra este folder en tu ventana de <strong>Sublime Text Editor</strong>.</li>
           <li>
-            En la navegación izquierda de Sublime Text:
+            En la navegación izquierda de <strong>Sublime Text Editor</strong>:
             <ul>
-              <li>Click derecho en <code>perfil</code> <strong>"New file"</strong></li>
-              <li>Guárdalo como <code>index.html</code> con <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
-              <li>Haz lo mismo y crea otro file llamado <code>style.css</code></li>
-              <li>Luego, en <code>perfil</code>, crea un <strong>"New Folder"</strong> llamado <code>imagenes</code></li>
+              <li>Click derecho en el folder <code>nombre_de_tu_website</code>. Selecciona la opción <strong>"Nuevo documento"</strong></li>
+              <li>Guárdalo como <code>index.html</code> con <code>Cmd + S</code> o <code>Ctrl + S</code></li>
+              <li>Haz lo mismo y crea otro documento llamado <code>style.css</code></li>
+              <li>Luego, en <code>nombre_de_tu_website</code>, crea un <strong>"New Folder"</strong> llamado <code>imagenes</code></li>
             </ul>
             </ul>
           </li>
-          <li>Finalmente, haz doble click en <code>index.html</code> para abrirlo con Chrome/Firefox</li>
+          <li>Finalmente, haz doble click en tu documento <code>index.html</code> en el <strong>escritorio</strong> para abrirlo con <strong>Chrome/Firefox</strong></li>
         </ol>
 
         <img src='images/drag-n-drop.png' width="100%"/>
@@ -26,103 +29,144 @@
 
       <section class="readme-section">
         <h2 class="readme-header">2. HTML 💀</h2>
-        <ul>
+        <ol>
+          <li>Vamos a crear la <strong>estructura</strong> de tu sitio. De esto dependerá como lucirá el resto del diseño de tu página así que tómate tu tiempo en decidir qué va donde.</li>
+          <li>Primero vamos a empezar a programar el HTML en tu <code>index.html</code>. Debería lucir algo así:
+            <script src="https://gist.github.com/juliet-tech/50e5041d7ac8b7466622b264843a16e2.js"></script>
+
+          </li>
           <li>
-            Para guardar tiempo, puedes solamente hacer click con el botón derecho y guardarlas en tu folder llamado <code>imagenes</code>
-            <ul class="list-inline">
-              <li><img src="images/code-icon.png" alt="Icon from Flaticon" width="100"></li>
-              <li><img src="images/travel-icon.png" alt="Travel by stephanie wauters from the Noun Project" width="100"></li>
-              <li><img src="images/writing-icon.png" alt="" width="100"></li>
-              <li><img src="images/wine-icon.png" alt="" width="100"></li>
+            Una vez termines la estructura, buscaremos las imágenes que agregaremos al sitio.
+            <ul>
+              <li>Para guardar tiempo, puedes solamente hacer click con el botón derecho y guardar estos GIFs en tu folder llamado <code>imagenes</code> para darle movimiento a tu página:
+                <ul class="list-inline">
+                  <li><img src="images/writing.gif" alt="Icon from Flaticon" width="200" height="200"></li>
+                  <li><img src="images/giphy.gif" alt="Travel by stephanie wauters from the Noun Project" width="200" height="200"></li>
+                  <li><img src="images/travel.gif" alt="" width="200" height="200"></li>
+                </ul>
+              </li>
+              <li>Si quieres agregar tus propios GIFs, puedes seguir estos pasos:
+                <ol>
+                  <li>Accede a <a href="https://giphy.com">Giphy</a>.</li>
+                  <li>Una vez encuentras el GIF que quieres, haz click derecho en la imágen y guárdala dentro de <code>nombre_de_tu_website/images</code> </li>
+                  <li>Para este momento, te debe salir el GIF detro de tu folder <code>imagenes</code> en <strong>Sublime Text Editor</strong>. Una vez la encuentras, utiliza su nombre para referirte al GIF en el atributo <code>src</code> de tu <code> &lt;img&gt;</code> tag.</li>
+                </ol>
+              </li>
+              <li>Para encontrar <strong>íconos</strong> puedes acceder aquí: <a href="https://iconstore.co/" target="_blank">IconStore</a> o <a href="https://thenounproject.com/" target="_blank">The Noun Project</a>.</li>
+              <li>También puedes agregar <strong>imágenes tuyas</strong> que tengas en tu computadora. Para hacer eso, solo debes asegurarte de tener la imágen que quieres guardada bajo tu folder <code>nombre_de_tu_website/imagenes</code></li>
             </ul>
           </li>
-          <li>Then start with this HTML code in <code>index.html</code></li>
-        </ul>
-        <script src="https://gist.github.com/juliettech13/50e5041d7ac8b7466622b264843a16e2.js"></script>
-
-        <h3>Extra - Encuentra tus propios íconos 😛</h3>
-        <ul>
-          <li>Los puedes encontrar aquí: <a href="https://iconstore.co/" target="_blank">IconStore</a> o <a href="https://thenounproject.com/" target="_blank">The Noun Project</a>.</li>
-        </ul>
+        </ol>
       </section>
 
       <section class="readme-section">
-        <h2 class="readme-header">3. CSS [fonts & colors] 💅🏼</h2>
-        <p>Conecta el stylesheet <code>style.css</code> en la sección <code>head</code> de tu HTML <code>perfil.html</code></p>
-        <script src="https://gist.github.com/juliettech13/ba0ead4df182ebc4ee77e5d485dcbaad.js"></script>
-        <p>Luego, copia + pega el codigo de CSS que encuentras abajo en tu <code>style.css</code> y <strong> hazlo bello 🔥</strong> (porque así se ve feo 😕)</p>
-        <ul>
-          <li>Para buscar tipos de letra: <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></li>
-          <li>Para buscar colores & color palettes: <a href="https://coolors.co/" target="_blank">Coolors</a> o <a href="http://colorhunt.co/" target="_blank">Color Hunt</a></li>
-          <li>Para buscar colores en otros websites, puedes instalar: <a href="http://www.colorzilla.com/chrome/" target="_blank">Colorzilla Chrome plugin</a></li>
-        </ul>
-        <script src="https://gist.github.com/juliettech13/387dc3a241d8624fac135e5d60a7f4ac.js"></script>
+        <h2 class="readme-header">3. CSS [fonts & colores] 💅🏼</h2>
+        <ol>
+          <li><p>Conecta el stylesheet <code>style.css</code> en la sección <code>&lt;head&gt;</code> de tu <code>index.html</code></p></li>
+          <script src="https://gist.github.com/juliet-tech/ba0ead4df182ebc4ee77e5d485dcbaad.js"></script>
+          <li><p>Luego, copia + pega el código de CSS que encuentras aquí en tu <code>style.css</code> y <strong> hazlo tuyo! 🔥</strong></p></li>
+          <script src="https://gist.github.com/juliet-tech/387dc3a241d8624fac135e5d60a7f4ac.js"></script>
+          <h3>Extra 😏</h3>
+          <ul>
+            <li>Para buscar tipos de letra: <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+            <li>Para buscar colores & color palettes: <a href="https://coolors.co/" target="_blank">Coolors</a> o <a href="http://colorhunt.co/" target="_blank">Color Hunt</a></li>
+            <li>Para buscar colores en otros websites, puedes instalar: <a href="http://www.colorzilla.com/chrome/" target="_blank">Colorzilla Chrome plugin</a></li>
+          </ul>
+        </ol>
       </section>
 
       <section class="readme-section">
-        <h2 class="readme-header">4. El mundo de los <code>div</code> 🙆🏻‍♀️</h2>
-        <p>Agrupa las distintas secciones con <code>div</code></p>
-        <script src="https://gist.github.com/juliettech13/c305d34ee88d6f06f4ec2e34bd024cd8.js"></script>
-      </section>
-
-      <section class="readme-section">
-        <h2 class="readme-header">5. Dale nombres + vida a tus tags 🔥</h2>
-        <ul>
-          <li>Nombra tu banner y footer con <code>id</code>- por ej: <code>&lt;div id="banner"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
-          <li>Nombra el resto con <code>class</code>- por ej: <code>&lt;div class="card"&gt;</code></li>
-          <li>Luego agregale este código de CSS a tu <code>style.css</code></li>
+        <h2 class="readme-header">4. Dale nombres + vida a tus elementos gracias a los <code>&lt;div&gt;</code>s 🙆🏻‍♀️</h2>
+        <ol>
+          <li>
+            <p>Primero agrupa las distintas secciones con <code>&lt;div&gt;</code>s</p>
+          </li>
+          <li>
+            <p>Agrégale el atributo <code>id</code> a tu logo, banner o footer- por ej: <code>&lt;div id="banner"&gt;</code> y <code>&lt;div id="footer"&gt;</code></p>
+            <ul>
+              <li>
+                <p>Recuerda, <code>id</code> es para elementos que sabes que <strong>NO</strong> vas a repetir.</p>
+              </li>
+              <li>
+                <p>Si estas pasando problemas con centrar tu texto, <a href="https://vanseodesign.com/css/vertical-centering/">este artículo</a> te puede ayudar con eso 😉</p>
+              </li>
+            </ul>
+          <li>Nombra el resto de tus <code>&lt;div&gt;</code>s con <code>class</code>es- por ej: <code>&lt;div class="card"&gt;</code></li>
+          <script src="https://gist.github.com/juliet-tech/c305d34ee88d6f06f4ec2e34bd024cd8.js"></script>
+          <li>
+            <p>
+              Una vez tengas terminada la estructura en tu <code>index.html</code>, agregale tu diseño en tu <code>style.css</code>. Aquí te paso par de ideas...
+            </p>
+            <script src="https://gist.github.com/juliet-tech/a799e4475ca370339786d23aa385b3ce.js"></script>
+          </li>
         </ul>
-        <script src="https://gist.github.com/juliettech13/a799e4475ca370339786d23aa385b3ce.js"></script>
 
         <h3>Extra - encuentra una foto cool para agregarle a tu banner</h3>
         <ul>
-          <li>Puedes encontrar una gratis aquí: <a href="https://unsplash.com/" target="_blank">Unsplash</a> o <a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
-        </ul>
+          <li>Puedes encontrar una gratis de buena calidad aquí: <a href="https://unsplash.com/" target="_blank">Unsplash</a> o <a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
+        </ol>
       </section>
 
       <section class="readme-section">
-        <h2 class="readme-header">6. Fontawesome 💡</h2>
-        <p>Primero, conecta <a href="https://fontawesome.com/">Fontawesome</a> en el <code>head</code> 🧠</p>
-        <script src="https://gist.github.com/juliettech13/939612df5c5b3e4bdcc6bbd2c8a84fc0.js"></script>
+        <h2 class="readme-header">5. Fontawesome 💡</h2>
+        <ol>
+          <li>
+            <p>Primero, conecta <a href="https://fontawesome.com/">Fontawesome</a> en el <code>&lt;head&gt;</code> 🧠 de tu <code>index.html</code></p>
+            <script src="https://gist.github.com/juliet-tech/939612df5c5b3e4bdcc6bbd2c8a84fc0.js"></script>
+          </li>
 
-        <p>Después los enseñas donde quieras 🤪</p>
-        <script src="https://gist.github.com/juliettech13/4cbf9d80aa428624664bac1e98d01035.js"></script>
+         <li>
+            <p>Después los enseñas donde quieras 🤩</p>
+           <script src="https://gist.github.com/juliet-tech/4cbf9d80aa428624664bac1e98d01035.js"></script>
+         </li>
 
-        <p>Y me les das estilo por favor 💁🏻‍♀️</p>
-        <script src="https://gist.github.com/juliettech13/2cfe1d9cd3deabfb5ec231b409c1a404.js"></script>
+          <li>
+            <p>Y me les das estilo par favar....</p>
+            <!-- <script src="https://gist.github.com/juliet-tech/2cfe1d9cd3deabfb5ec231b409c1a404.js"></script> -->
+          </li>
+        </ol>
       </section>
 
       <section class="readme-section">
-        <h2 class="readme-header">7. Bootstrap ⚡️</h2>
+        <h2 class="readme-header">6. Bootstrap ⚡️</h2>
+        <ol>
+          <li>
+            <p>Conecta <a href="getbootstrap.com/">Bootstrap</a> en el <code>&lt;head&gt;</code> de tu <code>index.html</code> <strong>antes de conectarlo con tu <code>style.css</code></strong></p>
+            <script src="https://gist.github.com/juliet-tech/b6cd248591c4384e531dd11b920659e6.js"></script>
+          </li>
 
-        <p>Conecta <a href="getbootstrap.com/">Bootstrap</a> en la sección <code>head</code> de tu HTML <strong>antes de tu <code>style.css</code></strong></p>
-        <script src="https://gist.github.com/juliettech13/b6cd248591c4384e531dd11b920659e6.js"></script>
-
-        <p>Juega agregando <code>class="btn btn-primary"</code> (a tus botones) y <code>class="list-inline"</code> (a tus íconos) para darle estilo rápidamente a tus componentes</p>
+          <li>
+            <p><strong>GAME TIME 😈:</strong> juega agregando <code>class="btn btn-info"</code> (a tus botones o links) y <code>class="list-inline"</code> (a tus <code>&lt;ul&gt;</code>) para darle estilo rápidamente a tus componentes.</p>
+            <p>Una vez termines ahi, te recomiendo este <a href="https://hackerthemes.com/bootstrap-cheatsheet/">cheetsheet</a> para que veas todas las locuritas más que puedes hacer solo agregándole par de clases a tu HTML 🙌🏼</p>
+          </li>
+        </ol>
       </section>
 
       <section class="readme-section">
-        <h2 class="readme-header">8. Bootstrap Grid 📱</h2>
+        <h2 class="readme-header">7. Grids 📱 (avanzado)</h2>
         <ul>
-          <li>Agrega tus 4 cartas al Bootstrap Grid para crear contenido <em>responsive</em></li>
+          <li>
+            <p>Juega con agregar otro set de <code>cards</code> a tu página. Estas irán dentro del <a href="https://getbootstrap.com/docs/4.0/layout/grid/">Bootstrap Grid</a> en vez de dentro de un <code>&lt;ul&gt; &lt;li&gt; [..] &lt;/li&gt; &lt;/ul&gt;</code>. Esto ayudará a que tu contenido sea <em>responsivo</em> para cualquier dispositivo. El Bootstrap Grid luce más o menos así:</p>
+            <script src="https://gist.github.com/juliet-tech/e7085a6f2e0f8ee379385b10dfc96010.js"></script>
+            <p>(<a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php">aquí</a> te dejo un tutorial más a profundidad del Bootstrap Grid por si te interesa...)</p>
+          </li>
         </ul>
-        <script src="https://gist.github.com/juliettech13/e7085a6f2e0f8ee379385b10dfc96010.js"></script>
       </section>
 
       <section class="readme-section">
-        <h2 class="readme-header">9. Extra 💙</h2>
-        <h3>Antes que nada, <strong>please</strong> lléname este <a href="https://juliettechevalier.typeform.com/to/VL5CR1">survey</a>! Te lo agradezco muchísimo 🙏🏼</h3>
+        <h2 class="readme-header">8. Extra 💙</h2>
         <br>
         <p>Quieres seguir aprendiendo? Estos son los pasos que te recomiendo:</p>
         <ul>
           <li>Intenta agregar mas funcionalidades a tu página. Trata de personalizarla lo más que puedas y veras con los pequeños obstáculos con los que te enfrentarás. <strong>Google is a developer's best friend 💎</strong></li>
-          <li>Sigue jugando con los componentes de <strong>Bootstrap</strong> --> forms, navbars, button groups, etc..</li>
-          <li>Lee sobre diseño web [User Experience Design, UI Designs and Components] para saber sobre tendencias web en diseño</li>
+          <li>Sigue jugando con los componentes de <strong>Bootstrap</strong> --> forms, navbars, button groups, etc.. Usar sus componentes te ayudará a leer más CSS y te ayudará a avanzar en tu diseño más rápido entre más te vayas conociendo las clases disponibles.</li>
+          <li>Lee sobre diseño web [User Experience Design, UI Designs and Components] para saber sobre tendencias web en diseño. Para esto, <a href="https://dev.to/">dev.to</a> es muy bueno y <a href="https://medium.com/">Medium</a> también.</li>
+          <li>Publica tu sitio online por medio de GitHub Pages. Puedes encontrar un tutorial <%= link_to 'aquí', about_path %>.</li>
         </ul>
         <p>Recursos adicionales:</p>
         <ul>
           <li><a href="https://prezi.com/view/ZyZBcqBkmQv9KyFBiMUl/">Presentación del Workshop:</a> Por si quieren volver a ver lo que hablamos hoy.</li>
-          <li><a href="https://github.com/juliettech13/perfil">Código del Workshop</a>: Para referencia en el futuro</li>
+          <li><a href="https://github.com/juliet-tech/perfil">Código del Workshop</a>: Para referencia en el futuro</li>
           <li><a href="https://html-css-js.com/html/tags/">HTML Cheat Sheet</a>: Recurso para ver todos los posibles tags con HTML y su comportamiento</li>
           <li><a href="http://overapi.com/css">CSS Cheat Sheet</a>: Recurso para ver todas las propiedades que puedes utilizar con CSS y sus explicaciones por Mozilla [el mejor sitio para documentación de la web]</li>
           <li><a href="https://htmlcheatsheet.com/css/">CSS Interactivo</a>: Recurso para ver live los comportamientos de las propiedades más populares</li>
