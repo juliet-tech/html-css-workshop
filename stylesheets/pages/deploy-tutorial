@@ -28,7 +28,7 @@
     line-height: 20px; }
 
 .highlight {
-  background: #1c2366;
+  background: #1d0949;
   color: #D0EA00;
   padding: 10px; }
 
